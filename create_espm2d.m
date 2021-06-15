@@ -11,7 +11,7 @@ function create_espm2d(xd,zd,T,patchslabname)
 dip = atan2d(abs(zd),xd);
 xh = -T*tand(dip/2);
 v_plate = 1;
-fault_length = 10000e3;
+fault_length = 500e5;%10000e3;
 fault_width = 1e8;
 
 % write patch file
