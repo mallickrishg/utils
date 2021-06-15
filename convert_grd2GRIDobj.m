@@ -3,7 +3,7 @@ function [outgrid,outgridll] = convert_grd2GRIDobj(ingridfilename)
 % OUTPUT
 % outgridll - in lat,lon coordinates
 % outgrid - in UTM (m)
-% Rishav Mallic, EOS, 2019
+% Rishav Mallick, EOS, 2019
 
 addpath ~/Dropbox/scripts/topotoolbox/
 addpath ~/Dropbox/scripts/topotoolbox/utilities/
