@@ -1,4 +1,4 @@
-function [yp,xp] = create_swath_box(x1,y1,x2,y2,w)
+function [xout,yout] = create_swath_box(x1,y1,x2,y2,w)
 % function to create a rectangle of half-width 'w' given 2 point (x1,y1) and (x2,y2)
 % INPUTS
 % make sure none of the coordinates overlap (if you have values like (24,90) & (27,90) change the second one to (27,90.001)
@@ -34,5 +34,6 @@ else
 	xp = [Yp(Yp==max(Yp)&Xp==max(Xp));Yp(Yp==min(Yp)&Xp==max(Xp));Yp(Yp==min(Yp)&Xp==min(Yp));Yp(Yp==max(Yp)&Xp==min(Xp))];
 end
 
-
+xout = yp;
+yout = xp;
 end
