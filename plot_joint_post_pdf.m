@@ -58,7 +58,7 @@ for i = 1:step:l
                 set(gca,'FontSize',12,'YTickLabelMode','auto')
             end
             %colormap hot
-            colormap(flipud(ttscm('davos')))
+            %colormap(flipud(ttscm('davos')))
             axis tight
             grid off
         elseif i<j
